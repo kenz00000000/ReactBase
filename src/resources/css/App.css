@@ -1,0 +1,179 @@
+#container {
+  max-width: 1200px;
+}
+
+#container,
+#menubar,
+#content {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#menubar {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+#menubarHeader {
+  padding: 30px 50px 30px 30px;
+}
+
+#logo {
+  display: block;
+  max-width: 220px;
+  overflow: hidden;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#navli {
+  width: 100%;
+}
+
+#siteInfo {
+  position: fixed;
+  bottom: 55px;
+  left: 20px;
+  width: auto;
+  height: auto;
+}
+
+#siteTitle,
+#siteDescription {
+  color: #444;
+}
+
+#currentDate {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #444;
+}
+
+#content {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+#contentImage {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 40px 40px 0 40px;
+}
+
+#pageImageLink {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#pageImage {
+  width: 100% !important;
+}
+
+#contentText {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 40px 80px 40px;
+}
+
+#pageTitle {
+  font-weight: bold;
+}
+
+#pageDescription {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+#copyright {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+}
+
+@media screen and ( max-width: 899px ) {
+
+  #menubar {
+    min-height: 100px;
+  }
+
+  #menubarHeader {
+    padding: 20px;
+  }
+
+  #navul {
+    border-top: none;
+  }
+
+  #navli {
+    float: left;
+    clear: none;
+    width: 25%;
+    border-right: 1px solid #fff;
+    border-bottom: none;
+  }
+  #navli:last-child {
+    border-right: none;
+  }
+
+  #navbtn {
+    text-align: center;
+  }
+
+  #navbtn span {
+    font-size: 14px;
+  }
+
+  #siteInfo {
+    position: fixed;
+    top: 20px;
+    left: auto;
+    right: 20px;
+    width: 200px;
+    height: 60px;
+  }
+
+  #siteTitle {
+    font-size: 18px;
+    text-align: right;
+  }
+
+  #siteDescription {
+    font-size: 12px;
+    text-align: right;
+  }
+
+  #currentDate {
+    font-size: 10px;
+    text-align: right;
+  }
+
+  #content {
+    min-height: auto;
+  }
+
+  #copyright {
+    text-align: center;
+  }
+}
+
+@media screen and ( max-width: 400px ) {
+
+  #siteInfo {
+    display: none;
+  }
+}
